@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+   <title>Contact me</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=4">
+   <!-- Do not modify the next three lines. -->
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <script src="js/jquery.min.js"></script>
+</head>
+<body>
+   <header role="banner">
+		<h1><img src="images/accessibility.svg" alt="" class="site-logo">Contact me</h1>
+   </header>
+   <main role="main">
+      <a href="#mobilenav"><img id="mobile-icon" src="images/bars-solid.svg" alt="Mobile menu"></a>
+      <nav id="mainnav" role="navigation">
+         <ul class="mainnav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+         </ul>
+      </nav>
+      <form>
+         <ul class="no-bullets">
+            <li>
+               <label for="name-field">Name *<br></label>
+               <input id="name-field" type="text" name="name" required>
+            </li>
+            <li>
+               <label for="email-field">Email  *<br></label>
+               <input id="email-field" type="email" name="email" required>
+            </li>
+            <li>
+               <label for="subject-field">Subject  *<br></label>
+               <input id="subject-field" type="text" name="subject" required>
+            </li>
+            <li>
+               <label for="msg-field">Message  *<br></label>
+               <textarea id="msg-field" name="message" required></textarea>
+            </li>
+         </ul>
+         <button type="submit">Submit</button>
+      </form>
+   </main>
+   <footer role="contentinfo">
+         <div class="copyright">Copyright&copy;
+    <span id="copyright">
+        <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+   </span> Erik Geiger</div>
+   </footer>
+<script src="js/main.js"></script>
+<nav id="mobilenav">
+         <ul class="no-bullets center-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+         </ul>
+      </nav>
+</body>
+</html>
+   
