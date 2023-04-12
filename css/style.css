@@ -105,6 +105,7 @@ ul, ol {
 table {
   width: 75%;
   margin-bottom: 1rem;
+  margin-right: 1rem;
   border-radius: 0;
 
 }
