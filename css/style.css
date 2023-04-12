@@ -112,7 +112,7 @@ thead th {
       width: auto;
       height: auto;
       text-indent: 0;
-      background-color: white;
+      background-color: fff;
    }
 thead th:last-child {
       display: table-cell;
@@ -136,7 +136,7 @@ tbody * {
 td:nth-child(2) {
       text-align: center;
    }
-tbody tr:nth-of-type(even) {
+tbody tr:nth-of-type(odd) {
       background-color: #f7f7f7;
    }
 
