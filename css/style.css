@@ -1,0 +1,315 @@
+  /* --------------- Misc. info --------------------- */
+  /*   
+      Page breaks at 0 to 650px, 651px to 1025px, 1026px to max width. 
+    */
+  /* -------------------- Mobile Screen ---------------------- */
+  /* ---------------------- Styles ---------------------- */
+/* Basic page appearance */
+html { background-color: white; } 
+header{
+  padding: 1rem 2rem 1rem 2rem;
+  border-top: 3px solid #035576;
+  border-left: 3px solid #035576;
+  border-right: 3px solid #035576;
+  background-color: antiquewhite;
+}
+nav {
+  background-color: antiquewhite;
+}
+body {
+  min-height: 100vh;
+  max-width: 75rem;
+  margin: 5rem auto;
+  font-family: Georgia, serif;
+  font-size: 1rem;
+  line-height: 1.45rem;
+  color: #333;
+}
+main {
+  background-color: antiquewhite;
+  border-left: 3px solid #035576;
+  border-right: 3px solid #035576;
+  padding: 1rem 2rem 1rem 2rem;
+
+}
+footer {  
+  text-align: center;
+  color: white;
+  background-color: #035576;
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+/* Typography */
+
+a {
+    color: #035576;
+}
+a:hover,
+a:focus {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+h1, h2, h3 {
+   font-weight: bold;
+   margin: 1.25rem 0 .625rem 0;
+}
+
+h1 {
+	margin: 0;
+	text-align: center;
+	letter-spacing: 0.05rem;
+	font-size: 1.953rem;
+	line-height: 2.83rem;
+}
+h2 {
+	font-size: 1.563rem;
+	line-height: 2.3rem
+}
+h3 {
+	font-size: 1.25rem;
+	line-height: 2.25rem;
+}
+
+/* Credit to https://css-tricks.com/snippets/css/simple-and-nice-blockquote-styling/ */
+blockquote {
+  background: white;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+/* Lists */
+ul, ol {
+	padding-left: 2.75rem;
+}
+.no-bullets {
+  list-style-type: none;
+}
+.center-list {
+  text-align: center;
+  list-style-position: inside;
+}
+/* Tables */
+
+table {
+  width: 75%;
+  margin-bottom: 1rem;
+  border-radius: 0;
+
+}
+thead,
+tbody,
+tfoot {
+  border: 1px solid #000;
+  background-color: #fff;
+}
+
+caption {
+  padding: 1rem;
+  font-weight: bold;
+}
+
+thead {
+  background: #fff;
+  color: #333;
+}
+
+tfoot {
+  background: #f7f7f7;
+  color: #333333;
+}
+
+thead tr {
+   border-bottom: 2px solid;
+}
+
+thead tr,
+tfoot tr {
+  background: transparent;
+}
+
+thead th,
+thead td,
+tfoot th,
+tfoot td {
+  padding: 1rem;
+  font-weight: bold;
+  text-align: left;
+  border: 1px solid; 
+}
+
+tbody th,
+tbody td {
+  padding: 1rem;
+   border: 1px solid;
+}
+
+tbody tr:nth-child(even) {
+  border-bottom: 0;
+  background-color: #f7f7f7;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.copyright {
+
+}
+/* Navigation*/
+#mainnav {
+  display: none;
+}
+
+#mobilenav {
+margin-top:600px;
+background: antiquewhite;
+border: 1px solid #035576;
+}
+#mobilnav ul {
+
+}
+#mobilenav ul li a {
+  background-color: white;
+  color: #035576;
+  font-size: 2rem;
+  text-decoration: underline;
+  padding: 0.2rem 2rem;
+  border: 1px solid #035576;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 1rem .5rem 1rem 0rem;
+  margin-top: .25rem;
+  margin-right: 10%;
+  width: 60%; 
+}
+#mobilenav ul li a:hover {
+  background: rgba(255, 255, 255, 0.8);
+  color: #000;
+}
+
+/*Images*/
+.site-logo {
+  width: 20%;
+  height: auto;
+  vertical-align: middle;
+  padding-right: 2rem;
+}
+#mobile-icon {
+  width: 10%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.portrait {
+  width: 100%;
+  height: auto;
+  float:right;
+  border-radius: 5px;
+  margin-left: 2rem;
+}
+
+/* Forms */
+textarea, input {
+  width: 80%;
+}
+
+textarea { 
+height:15rem; }
+
+input {
+  height: 1.25rem;
+  margin-bottom: .5rem;
+}
+/* test menu */
+
+/* -------------------- Tablet Screen ---------------------- */
+  @media all and (min-width:651px) { 
+/* ---------------------- Styles ----------------------- */
+nav {
+  background-color: antiquewhite;
+}
+#mobilenav {
+  display: none;
+}
+#mainnav {
+  display: inherit;
+  background-color: #antiquewhite;
+  line-height: 3rem;
+}
+#mainnav ul {
+  margin: 1rem 0 0 0 ;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+#mainnav ul li {
+  display: inline;
+}
+
+#mainnav ul li a {
+  background-color: white;
+  color: #035576;
+  font-size: 2rem;
+  text-decoration: underline;
+  padding: 0.2rem 2rem;
+  border: 1px solid #035576;
+  border-radius: 5px;
+}
+
+#mainnav ul li a:hover {
+  background: rgba(255, 255, 255, 0.8);
+  color: #000;
+}
+     }
+/* Images */
+.site-logo {
+  width: 11%;
+  height: auto;
+}
+.portrait {
+  width: 20%;
+  height: auto;
+}
+
+/* -------------------- Desktop Screen --------------------- */
+      @media all and (min-width:1026px) {  
+/* ---------------------- Styles ----------------------- */
+/*Navigation */
+/* Credit to the tutorial at https://unused-css.com/blog/css-horizontal-lists/ */
+nav {
+  background-color: antiquewhite;
+}
+#mainnav {
+  background-color: #antiquewhite;
+  line-height: 3rem;
+}
+#mainnav ul {
+  margin: 1rem 0 0 0 ;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+/* Images */
+.site-logo {
+  width: 12%;
+  height: auto;
+}
+#mobile-icon {
+  display: none;
+}
+}
