@@ -11,7 +11,7 @@
 </head>
 <body>
    <header role="banner">
-		<h1><img src="images/accessibility.svg" alt="" class="site-logo">Contact me</h1>
+		<h1><img src="images/accessibility.svg" alt="Accessibility" class="site-logo">Contact me</h1>
    </header>
    <main role="main">
       <a href="#mobilenav"><img id="mobile-icon" src="images/bars-solid.svg" alt="Mobile menu"></a>
@@ -26,19 +26,23 @@
          <ul class="no-bullets">
             <li>
                <label for="name-field">Name *<br></label>
-               <input id="name-field" type="text" name="name" required>
+               <input id="name-field" type="text" name="name" required aria-required="true" onkeyup="validateField(event)" onblur="validateField(event)" data-errmsg="You must enter your name.">
+               <div id="name-field-err" class="errmsg"></div>
             </li>
             <li>
                <label for="email-field">Email  *<br></label>
-               <input id="email-field" type="email" name="email" required>
+               <input id="email-field" type="email" name="email" required aria-required="true" onkeyup="validateField(event)" onblur="validateField(event)" data-errmsg="You must enter your email address.">
+               <div id="email-field-err" class="errmsg"></div>
             </li>
             <li>
                <label for="subject-field">Subject  *<br></label>
-               <input id="subject-field" type="text" name="subject" required>
+               <input id="subject-field" type="text" name="subject" required aria-required="true" onkeyup="validateField(event)" onblur="validateField(event)" data-errmsg="You must enter a subject.">
+               <div id="subject-field-err" class="errmsg"></div>
             </li>
             <li>
                <label for="msg-field">Message  *<br></label>
-               <textarea id="msg-field" name="message" required></textarea>
+               <textarea id="msg-field" name="message" required aria-required="true" onkeyup="validateField(event)" onblur="validateField(event)" data-errmsg="You must enter a message."></textarea>
+               <div id="msg-field-err" class="errmsg"></div>
             </li>
          </ul>
          <button type="submit">Submit</button>
@@ -58,6 +62,7 @@
             <li><a href="contact.html">Contact</a></li>
          </ul>
       </nav>
+   <script type="text/javascript"  src="js/validate.js"></script>
 </body>
 </html>
    
